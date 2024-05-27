@@ -1,6 +1,6 @@
 ---
 - name: Restart Docker Service
-  hosts: servers
+  hosts: all
   become: yes
   tasks:
     - name: Restart Docker
