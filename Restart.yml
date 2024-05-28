@@ -8,7 +8,5 @@
 #        name: docker
 #        state: restarted
         
-    - name: Change to project directory
-      ansible.builtin.command: sudo docker compose up
-      args:
-        chdir:  /home/ubuntu/easyTravel-Docker
+    - name: run
+      ansible.builtin.command: ls -l
