@@ -9,6 +9,6 @@
 #        state: restarted
         
     - name: run
-      ansible.builtin.command: ls -l
+      ansible.builtin.command: docker compose up
       args:
-        chdir: /home/ubuntu/
+        chdir: /home/ubuntu/easyTravel-Docker/
