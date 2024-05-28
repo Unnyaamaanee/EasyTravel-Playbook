@@ -4,6 +4,4 @@
   become: yes
   tasks:
     - name: Restart Docker
-      service:
-        name: docker
-        state: restarted
+      ansible.builtin.shell: ^C && sudo docker compose up
