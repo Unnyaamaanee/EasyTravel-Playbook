@@ -9,7 +9,6 @@
         state: restarted
 
     - name: Start Docker Service
-      
-      cmd: sudo docker compose up  
+      command: sudo docker compose up  
       args:
         chdir: /home/ubuntu/easyTravel-Docker/
