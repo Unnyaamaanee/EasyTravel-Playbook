@@ -10,3 +10,5 @@
         
     - name: run
       ansible.builtin.command: ls -l
+      args:
+        chdir: /home/ubuntu/
