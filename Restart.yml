@@ -9,6 +9,6 @@
         state: restarted
 
     - name: Start Docker Service
-      ansible.builtin.command: docker compose up  
-      args:
-        chdir: /home/ubuntu/easyTravel-Docker
+      chdir: /home/ubuntu/easyTravel-Docker/
+      cmd: sudo docker compose up  
+      
