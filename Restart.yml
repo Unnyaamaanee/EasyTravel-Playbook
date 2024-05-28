@@ -7,8 +7,8 @@
       ansible.builtin.service:
         name: docker
         state: restarted
-
-    - name: Start Docker Service
-      command: sudo docker compose up
+        
+    - name: Change to project directory
+      ansible.builtin.shell: cd /home/ubuntu/easyTravel-Docker && sudo docker compose up
       args:
-        chdir: /home/ubuntu/easyTravel-Docker/
+        chdir:  /home/ubuntu/easyTravel-Docker
