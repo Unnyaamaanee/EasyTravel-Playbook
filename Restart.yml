@@ -3,10 +3,10 @@
   hosts: all
   become: yes
   tasks:
-    - name: Restart Docker service
-      ansible.builtin.service:
-        name: docker
-        state: restarted
+#    - name: Restart Docker service
+#     ansible.builtin.service:
+#        name: docker
+#        state: restarted
         
     - name: Change to project directory
       ansible.builtin.shell: cd /home/ubuntu/easyTravel-Docker && sudo docker compose up
