@@ -3,12 +3,7 @@
   hosts: all
   become: yes
   tasks:
-    - name: Restart Docker service
-      ansible.builtin.service:
-        name: docker
-        state: restarted
-
     - name: Start Docker Service
-      command: sudo docker compose up  
+      command: sudo docker compose up
       args:
         chdir: /home/ubuntu/easyTravel-Docker/
